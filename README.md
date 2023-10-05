@@ -13,30 +13,9 @@
 
 
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">Best-README-Template</h3>
-
-  <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
-  </p>
-</div>
 
 
+<h1><center>Project Management Form</center></h1>
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -67,20 +46,22 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Description
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+Data Structure: Define the data structure in JSON format. In this example, we have a JSON object called "projects" containing an array of project objects. Each project object has the following properties:
+1. project_id (Primary Key): Unique identifier for the project.
+2. project_name: Name of the project.
+3. assign_to: Person assigned to the project.
+4. assessment_date: Date when the project is assessed.
+5. deadline: Deadline for the project
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+CRUD Operations: Use the JPDB API to interact with the database for CRUD operations.
+1. Create a new project: Use db.insertData("projects", newProject) to add a new project to the database.
+2. Read a project by its ID: Use db.getData("projects", projectIdToRead) to retrieve project information by ID.
+3. Update a project's information: Use db.updateData("projects", projectIdToUpdate, updatedProject) to modify project details.
+4. Delete a project: Use db.deleteData("projects", projectIdToDelete) to remove a project from the database.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+With this setup, you can easily manage project data, including project names, assignments, assessment dates, and deadlines using JSONPowerDB.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -104,10 +85,13 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Benefits of using JsonPowerDB
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+JsonPowerDB is a Database Server with Developer friendly REST API services. It's a High Performance, Light Weight, Ajax Enabled, Serverless, Simple to Use, Real-time Database.
+
+Easy and fast to develop database applications without using any server side programming / scripting or without installing any kind of database.
+
+Whether it's a Dynamic Website or a Mobile App or some Data Analytics Portal, the development is real fun and fast. Nothing better than trying it yourself. What all you need is a basic understanding of HTML, CSS, Bootstrap, and Javascript.
 
 ### Prerequisites
 
