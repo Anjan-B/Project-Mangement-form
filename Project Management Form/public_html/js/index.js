@@ -82,22 +82,22 @@ function validateData() {
         return "";
     }
     if (proname === "") {
-        alert("Employee id missing");
+        alert("project name missing");
         $("#proName").focus();
         return "";
     }
     if (to === "") {
-        alert("Employee id missing");
+        alert("assign to missing");
         $("#to").focus();
         return "";
     }
     if (date === "") {
-        alert("Employee id missing");
+        alert("assignment data");
         $("#date").focus();
         return "";
     }
     if (deadline === "") {
-        alert("Employee id missing");
+        alert("deadline");
         $("#deadline").focus();
         return "";
     }
